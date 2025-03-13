@@ -61,30 +61,6 @@ To create a new keybinding mode, follow these steps:
    }
    ```
 
-### Example
-
-Here's an example of how to set up a custom mode and keybinding:
-
-1. **Toggle to Custom Mode:**
-
-   ```json
-   {
-     "key": "ctrl+alt+m",
-     "command": "keybind-modes.toggle",
-     "args": { "mode": "myCustomMode" }
-   }
-   ```
-
-2. **Keybinding Active in Custom Mode:**
-
-   ```json
-   {
-     "key": "n",
-     "command": "workbench.action.files.newUntitledFile",
-     "when": "mode == 'myCustomMode'"
-   }
-   ```
-
 ## Status Bar
 
 The current mode is displayed in the status bar, allowing you to quickly see which mode is active.
